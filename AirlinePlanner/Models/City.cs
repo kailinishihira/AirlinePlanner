@@ -115,21 +115,6 @@ namespace AirlinePlanner.Models
       City newCity = new City(CityName,CityId);
       return newCity;
     }
-    //
-    // public static void DeleteCity(int id)
-    // {
-    //   MySqlConnection conn = DB.Connection();
-    //   conn.Open();
-    //   var cmd = conn.CreateCommand() as MySqlCommand;
-    //   cmd.CommandText = @"DELETE FROM cities WHERE id = @thisId;";
-    //
-    //   MySqlParameter cityId = new MySqlParameter();
-    //   cityId.ParameterName = "@thisId";
-    //   cityId.Value = id;
-    //   cmd.Parameters.Add(cityId);
-    //
-    //   cmd.ExecuteNonQuery();
-    // }
 
     public void Delete()
     {
