@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+<p><a href="/">Home</a></p>
+<p><a href="/flights">View all flights</a></p>
+<p><a href="/flights/new">Add new flight</a></p>
+<p><a href="/cities">View all cities</a></p>
+<p><a href="/cities/new">Add new city</a></p>
+
+
+
+<h1>Airline Planner</h1>
+
+<h2>Flights Departing From: </h2>
+@if (Model.Count !=0)
+{
+  <ul>
+    @foreach (var flight in Model)
+    {
+      <li><a href='/flights/@flight.GetId()'>@flight.GetDepartureCity()</a></li>
+    }
+  </ul>
+}

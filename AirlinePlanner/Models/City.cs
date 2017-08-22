@@ -81,7 +81,7 @@ namespace AirlinePlanner.Models
       MySqlConnection conn = DB.Connection();
       conn.Open();
       var cmd = conn.CreateCommand() as MySqlCommand;
-      cmd.CommandText = @"INSERT INTO `cities`  (`name`) VALUES (@name);";
+      cmd.CommandText = @"INSERT INTO cities  (name) VALUES (@name);";
       MySqlParameter name = new MySqlParameter();
       name.ParameterName = "@name";
       name.Value = this._name;

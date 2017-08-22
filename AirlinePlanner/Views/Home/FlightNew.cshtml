@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+<p><a href="/">Home</a></p>
+<p><a href="/flights">View all flights</a></p>
+<p><a href="/flights/new">Add new flight</a></p>
+<p><a href="/cities">View all cities</a></p>
+<p><a href="/cities/new">Add new city</a></p>
+
+
+
+<h1>Airline Planner</h1>
+
+<h1>Add a new flight</h1>
+<form action="/flights/add" method="post">
+  <label for="departure-time">Departure Time: </label>
+  <input id="departure-time" name="departure-time" type="time">
+  <label for="departure-city">Departure city: </label>
+  <input id="departure-city" name="departure-city" type="text">
+  <label for="arrival-city">Arrival city: </label>
+  <input id="arrival-city" name="arrival-city" type="text">
+  <label for="flight-status">Flight status: </label>
+  <input id="flight-status" name="flight-status" type="text">
+  <button type="submit">Add new flight</button>
+</form>

@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+
+<p><a href="/">Home</a></p>
+<p><a href="/flights">View all flights</a></p>
+<p><a href="/flights/new">Add new flight</a></p>
+<p><a href="/cities">View all cities</a></p>
+<p><a href="/cities/new">Add new city</a></p>
+
+
+<h1>Airline Planner</h1>
+
+<h2>Add a new city: </h2>
+
+<form action="/cities/add" method="post">
+  <label for="city-name">City: </label>
+  <input type="text" id="city-name" name="city-name">
+  <button type="submit">Add</button>
+</form>
